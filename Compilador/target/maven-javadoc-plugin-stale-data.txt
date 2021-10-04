@@ -1,0 +1,61 @@
+@options
+@packages
+@argfile
+-encoding
+'UTF-8'
+-protected
+-source
+'11'
+-sourcepath
+'C:/Users/alanm/Desktop/Progra 2/Compilador/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2021. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/alanm/Desktop/Progra 2/Compilador/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Compilador 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' 'C:/Users/alanm/Desktop/Progra 2/Compilador/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Compilador 1.0-SNAPSHOT API'
+Analizador
+Archivos
+com.mycompany.compilador
+Frontend
+'C:/Users/alanm/Desktop/Progra 2/Compilador/src/main/java/Analizador/TokenID.java'
+'C:/Users/alanm/Desktop/Progra 2/Compilador/src/main/java/Archivos/AbrirTexto.java'
+'C:/Users/alanm/Desktop/Progra 2/Compilador/src/main/java/Archivos/GuardarTexto.java'
+'C:/Users/alanm/Desktop/Progra 2/Compilador/src/main/java/com/mycompany/compilador/Bucador.java'
+'C:/Users/alanm/Desktop/Progra 2/Compilador/src/main/java/com/mycompany/compilador/inicio.java'
+'C:/Users/alanm/Desktop/Progra 2/Compilador/src/main/java/com/mycompany/compilador/ManejadorPrincipal.java'
+'C:/Users/alanm/Desktop/Progra 2/Compilador/src/main/java/com/mycompany/compilador/NumeradorFilas.java'
+'C:/Users/alanm/Desktop/Progra 2/Compilador/src/main/java/Frontend/buscador.java'
+C:\Users\alanm\Desktop\Progra 2\Compilador\src\main\java = 1631653377426
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\allclasses-index.html = 1632889831732
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\allclasses.html = 1632889831743
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\allpackages-index.html = 1632889831735
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\constant-values.html = 1632889831525
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\deprecated-list.html = 1632889831740
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\element-list = 1632889831199
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\help-doc.html = 1632889831752
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\index-all.html = 1632889831727
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\index.html = 1632889831747
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\member-search-index.js = 1632889831723
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\member-search-index.zip = 1632889831725
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\overview-summary.html = 1632889831748
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\overview-tree.html = 1632889831668
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\package-search-index.js = 1632889831700
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\package-search-index.zip = 1632889831720
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\script.js = 1632889831756
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\search.js = 1632889831760
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\serialized-form.html = 1632889831548
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\stylesheet.css = 1632889831754
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\type-search-index.js = 1632889831721
+C:\Users\alanm\Desktop\Progra 2\Compilador\target\site\apidocs\type-search-index.zip = 1632889831722
