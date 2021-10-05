@@ -23,11 +23,9 @@ public class buscador extends javax.swing.JFrame {
      * Creates new form buscador
      */
     
-    NumeroLinea num;
+
     public buscador() {
         initComponents();
-        num = new NumeroLinea(AreaTexto);   
-        jScrollPane1.setRowHeaderView(num);
         Editar.setBackground(Color.green);
             AreaTexto.setEditable(false);
     }
