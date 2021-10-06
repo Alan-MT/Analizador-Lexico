@@ -2,8 +2,7 @@ package com.mycompany.compilador;
 
 import Analizador.*;
 import Archivos.*;
-import Frontend.ReporteTokens;
-import Frontend.buscador;
+import Frontend.*;
 import Token.*;
 import java.awt.event.*;
 import java.io.File;
@@ -26,6 +25,9 @@ public class ManejadorPrincipal {
     private ArrayList<Errores> listaErrores;
     private Analizador2 analizar;
     private ReporteTokens report;
+    private Lexemas lexemas;
+    private ContadorLexemas contador;
+    private ArrayList<Lexemas> listaLexemas;
 
     public ManejadorPrincipal() {
         this.buscador = new buscador();
@@ -36,20 +38,25 @@ public class ManejadorPrincipal {
         this.listaErrores = new ArrayList<>();
         this.analizar = new Analizador2();
         this.report = new ReporteTokens();
+        this.contador = new ContadorLexemas();
 
         this.buscador.getAnalizar().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
 
-            if (buscador.getAreaTexto().getText().length() != 0) {
+                if (buscador.getAreaTexto().getText().length() != 0) {
                     analizar.analizar(buscador.getAreaTexto(), listaErrores, listaTokens);
                     mostrarErrores();
                     if (listaErrores == null || listaErrores.size() == 0) {
                         report.setVisible(true);
                         reporteTokens();
+                        report.getjComboBox1().removeAllItems();
                         for (Token o : listaTokens) {
                             report.getjComboBox1().addItem(o.getLexema());
                         }
+                        lexemas = new Lexemas(listaTokens);
+                        listaLexemas = lexemas.getListaLexemas();
+
                     }
                     listaErrores.clear();
                     listaTokens.clear();
@@ -102,6 +109,13 @@ public class ManejadorPrincipal {
 
             }
         });
+        this.report.getLexema().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent arg0) {
+                contador.setVisible(true);
+                llenarLexemas();
+            }
+        });
 
     }
 
@@ -128,6 +142,14 @@ public class ManejadorPrincipal {
             row[3] = T.getColumna();
             modelo.addRow(row);
         }
+    }
+
+    public void llenarLexemas() {
+        DefaultTableModel modelo = (DefaultTableModel) contador.getjTable1().getModel();
+        modelo.setRowCount(0);
+        for (int i = 0; i < this.listaLexemas.size(); i++) {
+        modelo.addRow(listaLexemas.get(i).getArray());
+        }    
     }
 
 }

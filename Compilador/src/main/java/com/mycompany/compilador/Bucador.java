@@ -6,10 +6,6 @@
 package com.mycompany.compilador;
 
 import java.awt.Color;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 import javax.swing.text.BadLocationException;

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Analizador;
 
 import Token.*;
@@ -27,17 +22,11 @@ public class Analizador2 {
 
         String texto = "", cadena = "";
         int estadoActual = 0;
-        texto = entrada.getText();
+        texto = entrada.getText()+" ";
         int fila = 0;
         int columna = 0;
 
         for (int i = 0; i < texto.length(); i++) {
-
-            if ((texto.charAt(i) != ' ') && (texto.charAt(i) == '\n')) {
-                fila++;
-                columna = 0;
-            }
-            columna++;
 
             if ((texto.charAt(i) != ' ') && (texto.charAt(i) != '\n')) {
                 estadoActual = trans.nuevoEstado(texto.charAt(i), estadoActual);
@@ -73,14 +62,19 @@ public class Analizador2 {
 
                 }
             }
+            if ((texto.charAt(i) != ' ') && (texto.charAt(i) == '\n')) {
+                fila++;
+                columna = 0;
+            }
+            columna++;
 
         }
 
     }
-    
-    public void analizador2(String texto, JTable tabla){
+
+    public void analizador2(String texto, JTable tabla) {
         int estadoActual = 0;
-        int estadoSiguiente =0;
+        int estadoSiguiente = 0;
         DefaultTableModel modelo = (DefaultTableModel) tabla.getModel();
         modelo.setRowCount(0);
         for (int i = 0; i < texto.length(); i++) {
@@ -93,8 +87,6 @@ public class Analizador2 {
             estadoActual = estadoSiguiente;
         }
 
-  
-  
     }
 
 }

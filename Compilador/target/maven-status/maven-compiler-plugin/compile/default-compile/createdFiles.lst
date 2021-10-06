@@ -1,5 +1,6 @@
 com\mycompany\compilador\ManejadorPrincipal$4.class
 com\mycompany\compilador\inicio.class
+Token\Lexemas.class
 Frontend\buscador$1.class
 Analizador\Transicion.class
 com\mycompany\compilador\ManejadorPrincipal$5.class
@@ -7,13 +8,16 @@ com\mycompany\compilador\ManejadorPrincipal.class
 Frontend\buscador$2.class
 com\mycompany\compilador\ManejadorPrincipal$2.class
 Token\TipoToken.class
+com\mycompany\compilador\ManejadorPrincipal$6.class
 Frontend\buscador.class
 com\mycompany\compilador\ManejadorPrincipal$1.class
 Archivos\GuardarTexto.class
 Token\Errores.class
+Frontend\ContadorLexemas.class
 Archivos\AbrirTexto.class
 Frontend\ReporteTokens.class
 Analizador\Analizador2.class
 com\mycompany\compilador\ManejadorPrincipal$3.class
 Token\Token.class
+Frontend\ContadorLexemas$1.class
 com\mycompany\compilador\Bucador.class
