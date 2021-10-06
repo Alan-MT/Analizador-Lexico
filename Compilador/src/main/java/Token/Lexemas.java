@@ -71,7 +71,7 @@ public class Lexemas{
         Lexemas.add(new Lexemas(lexema, tipoTk));
     }
     
-        public static boolean igualar(String cadena1, String cadena2) {
+        public boolean igualar(String cadena1, String cadena2) {
         
         if (cadena1.length() == cadena2.length()) {            
             for (int i = 0; i < cadena1.length(); i++) {                
